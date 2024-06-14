@@ -131,7 +131,7 @@ runs:
     - name: check baseline
       uses: wasptree/veracode-autobaseline@master
       with:
-        token: ${{ inputs.token }}
+        baseline_token: ${{ inputs.baseline_token }}
         source: ${{ inputs.source }}
         file: ${{ inputs.result_file }}
         commit: ${{ inputs.commit }}
@@ -147,7 +147,7 @@ runs:
         vkey: ${{ inputs.vkey }}
         file: ${{ inputs.file }}
         baseline_file: ${{ inputs.baseline_file }}
-        baseline_token: ${{ inputs.token }}
+        token: ${{ inputs.token }}
         policy_name: ${{ inputs.policy_name }}
         policy_file: ${{ inputs.policy_file }}
         timeout: ${{ inputs.timeout }}
