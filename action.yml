@@ -133,7 +133,7 @@ runs:
       with:
         baseline_token: ${{ inputs.baseline_token }}
         source: ${{ inputs.source }}
-        file: ${{ inputs.result_file }}
+        result_file: ${{ inputs.result_file }}
         commit: ${{ inputs.commit }}
         branch: ${{ inputs.branch }}
         repo: ${{ inputs.repo }}
@@ -170,7 +170,7 @@ runs:
       with:
         baseline_token: ${{ inputs.baseline_token }}
         source: ${{ inputs.source }}
-        file: ${{ inputs.result_file }}
+        result_file: ${{ inputs.result_file }}
         commit: ${{ inputs.commit }}
         branch: ${{ inputs.branch }}
         repo: ${{ inputs.repo }}
