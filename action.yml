@@ -129,7 +129,6 @@ runs:
   using: 'composite'
   steps:
     - name: check baseline
-      if: ${{ inputs.update == 'false' }}
       uses: wasptree/veracode-autobaseline@v0.2
       with:
         baseline_token: ${{ inputs.baseline_token }}
