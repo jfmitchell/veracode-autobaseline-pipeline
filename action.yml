@@ -129,7 +129,7 @@ runs:
   using: 'composite'
   steps:
     - name: check baseline
-      uses: wasptree/veracode-autobaseline@master
+      uses: wasptree/veracode-autobaseline@v0.2
       with:
         baseline_token: ${{ inputs.baseline_token }}
         source: ${{ inputs.source }}
