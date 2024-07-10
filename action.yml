@@ -129,6 +129,7 @@ runs:
   using: 'composite'
   steps:
     - name: check baseline
+      if: ${{ inputs.update == 'false' }}
       uses: wasptree/veracode-autobaseline@v0.2
       with:
         baseline_token: ${{ inputs.baseline_token }}
@@ -163,3 +164,16 @@ runs:
         project_name: ${{ inputs.project_name }}
         project_url: ${{ inputs.project_url }}
         project_ref: ${{ inputs.project_ref }}
+
+    - name: update baseline
+      if: ${{ inputs.update == 'true' }}
+      uses: wasptree/veracode-autobaseline@v0.2
+      with:
+        baseline_token: ${{ inputs.baseline_token }}
+        source: ${{ inputs.source }}
+        file: ${{ inputs.result_file }}
+        commit: ${{ inputs.commit }}
+        branch: ${{ inputs.branch }}
+        repo: ${{ inputs.repo }}
+        checkbf: ${{ inputs.checkbf }}
+        update: ${{ inputs.update }}
