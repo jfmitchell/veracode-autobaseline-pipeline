@@ -138,7 +138,6 @@ runs:
         branch: ${{ inputs.branch }}
         repo: ${{ inputs.repo }}
         checkbf: ${{ inputs.checkbf }}
-        update: "false"
     
     - name: Run Veracode Pipeline Scan
       uses: veracode/Veracode-pipeline-scan-action@v1.0.12
