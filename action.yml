@@ -165,7 +165,7 @@ runs:
 
     - name: update baseline
       if: ${{ inputs.update == 'true' }}
-      uses: wasptree/veracode-autobaseline@v0.2
+      uses: wasptree/veracode-autobaseline@master
       with:
         baseline_token: ${{ inputs.baseline_token }}
         source: ${{ inputs.source }}
