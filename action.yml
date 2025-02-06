@@ -140,7 +140,7 @@ runs:
         checkbf: ${{ inputs.checkbf }}
     
     - name: Run Veracode Pipeline Scan
-      uses: veracode/Veracode-pipeline-scan-action@v1.0.12
+      uses: veracode/Veracode-pipeline-scan-action@v1.0.18
       with:
         vid: ${{ inputs.vid }}
         vkey: ${{ inputs.vkey }}
